@@ -35,12 +35,21 @@ header {
     }
 
    .comment_card p:last-child{
-        font-size: 14px !important;   /* ← etwas kleinere Schrift */
+        font-size: 10px !important;   /* ← etwas kleinere Schrift */
     }
     .comment_card {
         gap: 50px !important;        /* ← weniger Abstand zwischen Name und Kommentar */
     }
     .comments_headline {
         font-size: 20px !important;   /* ← kleinere Überschrift */
+    }
+.details p {
+        flex-direction: column !important;  /* ← Name und Preis untereinander */
+        align-items: flex-start !important; /* ← Linksbündig */
+    }
+
+    .comment_card strong {
+        min-width: 0 !important;     /* ← kein Mindestabstand mehr */
+        font-size: 12px;
     }
 }
