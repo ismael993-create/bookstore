@@ -30,7 +30,7 @@ header {
 }
 @media (max-width: 600px) {
     .contentContainer {
-        width: 410px !important;        /* ← nimm die volle Breite */
+        width: 280px !important;        /* ← nimm die volle Breite */
         margin: 20px 0;     /* ← weniger Abstand oben/unten */
     }
 
