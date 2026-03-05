@@ -1,0 +1,138 @@
+.contentContainer {
+    width: 560px;
+    height: 950px;
+    margin: 40px;
+    background-color: #0A2E3D;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.book {
+    width: 120px;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: #f7f7f7 1px 2px 55px;
+    margin-bottom: 20px;
+
+}
+
+.border {
+    font-family: system-ui;
+    border-bottom: 1px solid #62A0B9;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.content_inhalt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.content_info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #62A0B9;
+    justify-content: space-between;
+}
+
+#price1 {
+    font-family: system-ui;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #BA2B2B;
+
+}
+
+.likes_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.heart{
+    font-size: 30px;
+    cursor: pointer;
+    color: grey;
+    transition: 0.2s;
+}
+
+.heart:hover{
+    transform: scale(1.2);
+}
+
+.heart.liked{
+    color: red;
+}
+
+.details {
+    padding: 35px;
+    font-family: system-ui;
+    color: white;
+}
+
+.price_book {
+        color: #BA2B2B;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.details p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail_label {
+    font-weight: bold;
+    width: 100px; 
+    white-space: nowrap;
+}
+
+.comments_headline {
+    font-family: system-ui;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.comments {
+    font-family: system-ui;
+    color: white;
+    margin-left: 20px;
+}
+
+.comment_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px 0;
+    
+    gap: 200px;
+}
+
+.comment_card strong {
+    padding-left: 10px;  
+    min-width: 100px;    
+}
+
+.comment_card p:last-child {
+    padding-right: 10px; 
+    text-align: right;
+}
