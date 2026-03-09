@@ -7,5 +7,11 @@ function like(index) {
         books[index].liked = true;
         books[index].likes++;
     }
-    renderAllBooks(); // alles neu zeichnen
+    renderAllBooks(); 
+    saveToLocalStorage();
+}
+
+function init() {
+    getFromLocalStorage();
+    renderAllBooks();
 }

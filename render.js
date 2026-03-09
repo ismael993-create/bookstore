@@ -61,4 +61,5 @@ function addComment(index) {
     });
     input.value = "";
     renderAllBooks();
+    saveToLocalStorage();
   }};
