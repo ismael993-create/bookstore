@@ -39,8 +39,26 @@ function renderAllBooks() {
           <p><strong class="detail_label">Genre:</strong> ${books[i].genre}</p>
         </div>
         <h2 class="comments_headline">Kommentare:</h2>
-        ${commentsHTML}
+        <br>
+       <div class="comments_container">
+    ${commentsHTML}
       </div>
+      <div class="comments_add">
+        <input type="text" placeholder="Kommentar hinzufügen...">
+        <button onclick="addComment(${i})"><img src="./img/pfeil.png" alt="kommentar adden" width="40px" height="40px"></button>
+        </div>
     `;
   }
 }
+
+function addComment(index) {
+  let input = document.querySelectorAll(".contentContainer input")[index];
+  let commentText = input.value.trim();
+  if (commentText !== "") {
+    books[index].comments.push({
+      name: "[Anonymer Leser]",
+      comment: commentText
+    });
+    input.value = "";
+    renderAllBooks();
+  }};

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     background-color: #05171E;
     color: white;
     overflow-x: hidden;
-    
+
 }
 
 header {
@@ -28,28 +28,64 @@ header {
     font-weight: bold;
     color: #ba2b2b;
 }
+
+input {
+    width: 100%;
+    height: 35px;
+    -webkit-text-fill-color: white;
+    background-color: transparent;
+    border: 0px;
+    font-size: 20px;
+}
+
+button {
+    width: 50px;
+    height: 45px;
+    background-color: #becfcf;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 @media (max-width: 600px) {
     .contentContainer {
-        width: 280px !important;        /* ← nimm die volle Breite */
-        margin: 20px 0;     /* ← weniger Abstand oben/unten */
+        width: 280px !important;
+        /* ← nimm die volle Breite */
+        margin: 20px 0;
+        /* ← weniger Abstand oben/unten */
     }
 
-   .comment_card p:last-child{
-        font-size: 10px !important;   /* ← etwas kleinere Schrift */
+    .comment_card p:last-child {
+        font-size: 10px !important;
+        /* ← etwas kleinere Schrift */
     }
+
     .comment_card {
-        gap: 50px !important;        /* ← weniger Abstand zwischen Name und Kommentar */
+        gap: 50px !important;
+        /* ← weniger Abstand zwischen Name und Kommentar */
     }
+
     .comments_headline {
-        font-size: 20px !important;   /* ← kleinere Überschrift */
+        font-size: 20px !important;
+        /* ← kleinere Überschrift */
     }
-.details p {
-        flex-direction: column !important;  /* ← Name und Preis untereinander */
-        align-items: flex-start !important; /* ← Linksbündig */
+
+    .details p {
+        flex-direction: column !important;
+        /* ← Name und Preis untereinander */
+        align-items: flex-start !important;
+        /* ← Linksbündig */
     }
 
     .comment_card strong {
-        min-width: 0 !important;     /* ← kein Mindestabstand mehr */
+        min-width: 0 !important;
+        /* ← kein Mindestabstand mehr */
         font-size: 12px;
+    
+    }
+
+    input {
+        font-size: 14px !important;
+        /* ← kleinere Eingabefelder */
     }
 }

@@ -1,6 +1,6 @@
 .contentContainer {
     width: 560px;
-    height: 950px;
+    height: 870px;
     margin: 40px;
     background-color: #0A2E3D;
     border-radius: 20px;
@@ -118,12 +118,16 @@ section {
     margin-left: 20px;
 }
 
+.comments_container {
+    height: 150px;
+    overflow-y: auto;
+    width: 100%;        
+}
 .comment_card {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 8px 0;
-    
+    padding: 8px 0; 
     gap: 200px;
 }
 
@@ -135,4 +139,13 @@ section {
 .comment_card p:last-child {
     padding-right: 10px; 
     text-align: right;
+}
+
+.comments_add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 50px;
 }
