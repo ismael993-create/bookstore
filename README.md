@@ -13,6 +13,7 @@ Ein einfacher Bookstore um kommentarte zu lesen und hinzuzufügen und zu liken.
 ## 🛠️ Features
 - Kommentare hinzufügen
 - like funktion
+- local Storage funktion
 
 ## 💻 Technologien
 - HTML
